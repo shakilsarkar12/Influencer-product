@@ -16,17 +16,30 @@ a{
     color: #3A3A3A;
 }
 
-/* header related style */
-header{
+header,
+#hero{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.primary-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px ;
+    background: #E02C6D;
+}
+
+/* header related style */
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .navlist{
@@ -43,7 +56,7 @@ header{
 }
 
 .navlink{
-    font-size: 18px;
+    font-size: 1.01rem;
     font-weight: 600;
 }
 
@@ -68,4 +81,59 @@ ion-icon{
     position: absolute;
     top: -7px;
     right: 0;
+}
+
+/* hero section relatade style*/
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#hero .hero-desc{
+    max-width: 580px;
+}
+
+#hero .hero-desc .title{
+    font-size: 3.25rem;
+    color: #3A3A3A;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#hero .hero-desc .desc{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+
+#hero .hero-desc .primary-btn{
+    border-radius: 40px;
+    display: flex;align-items: center;
+}
+
+#hero .hero-desc .primary-btn .arrow{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: -9px;
+    margin-left: 5px;
+}
+
+#hero .hero-img{
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#hero .hero-img img{
+    max-width: 85%;
+    margin: auto;
 }
